@@ -1,0 +1,95 @@
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 40px;
+    text-shadow: 3px 0px 0px white;
+  }
+  * {
+      margin: 0px;
+      padding: 0px;
+  }
+  body {
+      margin-top: 2em;
+      background-color: #E2C1D0;
+  }
+  .eggs {
+      margin: 8em auto;
+      text-align: center;
+  }
+  .egg {
+      width:210px;
+      height:300px;
+      margin:1em, auto;
+      border-top-left-radius: 50% 60%;
+      border-top-right-radius: 50% 60%;
+      border-bottom-right-radius: 50% 38%;
+      border-bottom-left-radius: 50% 38%;
+      display: inline-block;
+      overflow: hidden;
+      grid-template-rows: repeat(5, 20%);
+  }
+  .stripe {
+      height: 20%;
+  }
+  
+  .stripe:not(:first-child) {
+      border-top: 4px solid #fff;
+  }
+  .stripe:nth-child(1) {
+      background-color:#F3B3B3;
+    }
+  .stripe:nth-child(2) {
+      background-color:#7B89A1; 
+  }
+  .stripe:nth-child(3) {
+      background-color: #F3D5B3;
+  }
+  .stripe:nth-child(4) {
+      background-color:#84B493; 
+  }
+  .stripe:nth-child(5) {
+      background-color: #CC97AF;
+  }
+  .egg-left{
+      transform: rotate(-15deg);
+      animation: egg-left-animation 0.8s linear 0s infinite alternate;
+  }
+  .egg-right {
+      background: #84B493;
+      background-image: url("https://wallpaperscraft.ru/image/zvezdnoe_nebo_mlechnyj_put_zvezdy_blesk_kosmos_118653_1366x768.jpg");
+      transform: rotate(25deg);
+      animation: egg-right-animation 0.7s linear 0s infinite alternate;
+  }
+  @-webkit-keyframes egg-left-animation {
+      0% {
+        transform: rotate(-25deg);
+      }
+      100% {
+        transform: rotate(-15deg);
+      }
+    }
+    
+    @keyframes egg-left-animation {
+      0% {
+        transform: rotate(-25deg);
+      }
+      100% {
+        transform: rotate(-15deg);
+      }
+    }
+    @-webkit-keyframes egg-right-animation {
+      0% {
+        transform: rotate(35deg);
+      }
+      100% {
+        transform: rotate(25deg);
+      }
+    }
+    
+    @keyframes egg-right-animation {
+      0% {
+        transform: rotate(35deg);
+      }
+      100% {
+        transform: rotate(25deg);
+      }
+    }
